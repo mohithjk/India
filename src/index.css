@@ -1,0 +1,118 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    background-color: #050505;
+    color: white;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    font-family: 'Inter', sans-serif;
+  }
+}
+
+@layer utilities {
+  .liquid-ruby {
+    fill: rgba(255, 0, 0, 0.4);
+    stroke: #FF0000;
+    stroke-width: 1px;
+    filter: drop-shadow(0 0 15px rgba(255, 0, 0, 0.8)) brightness(1.4);
+    transition: filter 0.3s ease;
+  }
+  
+  .liquid-ruby:hover {
+    filter: drop-shadow(0 0 25px rgba(255, 0, 0, 1)) brightness(1.8);
+  }
+
+  .aerogel-card {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
+  }
+
+  .glass-panel {
+    background: linear-gradient(135deg, rgba(255,255,255,0.08), rgba(255,255,255,0.03));
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid rgba(255,255,255,0.15);
+    box-shadow: 0 8px 32px 0 rgba(0,0,0,0.4);
+  }
+
+  .fade-in {
+    animation: fadeIn 0.3s ease-in-out forwards;
+  }
+
+  /* Light Sweep Animation for Movie Titles */
+  @keyframes light-sweep {
+    0% { transform: translateX(-100%) skewX(-30deg); opacity: 0; }
+    50% { opacity: 0.5; }
+    100% { transform: translateX(200%) skewX(-30deg); opacity: 0; }
+  }
+
+  .light-sweep {
+    position: relative;
+    overflow: hidden;
+  }
+
+  .light-sweep::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    background: linear-gradient(
+      to right,
+      transparent,
+      rgba(255, 255, 255, 0.4),
+      transparent
+    );
+    animation: light-sweep 3s infinite ease-in-out;
+    pointer-events: none;
+  }
+
+  /* Cinematic Movie Title Shimmer */
+  @keyframes shimmer-glow {
+    0% { background-position: -200% center; text-shadow: 0 0 10px rgba(122, 163, 255, 0); }
+    50% { background-position: 200% center; text-shadow: 0 0 20px rgba(255, 255, 255, 0.4); }
+    100% { background-position: -200% center; text-shadow: 0 0 10px rgba(122, 163, 255, 0); }
+  }
+
+  .shimmer-glow {
+    background: linear-gradient(
+      90deg,
+      rgba(255, 255, 255, 0.4) 0%,
+      rgba(255, 255, 255, 1) 50%,
+      rgba(255, 255, 255, 0.4) 100%
+    );
+    background-size: 200% auto;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: shimmer-glow 4s linear infinite;
+  }
+
+  .floating-depth {
+    pointer-events: none;
+    will-change: transform;
+    @apply absolute select-none z-0;
+  }
+
+  .story-section {
+    @apply min-h-screen w-full relative overflow-hidden;
+  }
+
+  .parallax-img {
+    @apply object-cover w-full h-full;
+  }
+
+  .glass-panel {
+    @apply bg-black/40 backdrop-blur-xl border border-white/10 shadow-2xl;
+  }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
