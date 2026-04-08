@@ -1,0 +1,247 @@
+{
+  "Andaman and Nicobar": {
+    "center": [
+      93.2425,
+      10.845
+    ],
+    "zoom": 3.12
+  },
+  "Andhra Pradesh": {
+    "center": [
+      80.759,
+      16.264
+    ],
+    "zoom": 3.19
+  },
+  "Arunachal Pradesh": {
+    "center": [
+      94.4795,
+      28.0597
+    ],
+    "zoom": 4.34
+  },
+  "Assam": {
+    "center": [
+      92.8579,
+      26.0561
+    ],
+    "zoom": 4.03
+  },
+  "Bihar": {
+    "center": [
+      85.804,
+      26.0689
+    ],
+    "zoom": 5.12
+  },
+  "Chandigarh": {
+    "center": [
+      76.7635,
+      30.7342
+    ],
+    "zoom": 10.0
+  },
+  "Chhattisgarh": {
+    "center": [
+      82.3146,
+      20.9449
+    ],
+    "zoom": 4.03
+  },
+  "Dadra and Nagar Haveli": {
+    "center": [
+      73.0757,
+      20.2062
+    ],
+    "zoom": 10.0
+  },
+  "Daman and Diu": {
+    "center": [
+      71.7745,
+      20.6794
+    ],
+    "zoom": 10.0
+  },
+  "Delhi": {
+    "center": [
+      77.0853,
+      28.6465
+    ],
+    "zoom": 10.0
+  },
+  "Goa": {
+    "center": [
+      74.0105,
+      15.3466
+    ],
+    "zoom": 10.0
+  },
+  "Gujarat": {
+    "center": [
+      71.3326,
+      22.4133
+    ],
+    "zoom": 4.05
+  },
+  "Haryana": {
+    "center": [
+      76.0286,
+      29.2932
+    ],
+    "zoom": 7.79
+  },
+  "Himachal Pradesh": {
+    "center": [
+      77.2877,
+      31.8201
+    ],
+    "zoom": 7.46
+  },
+  "Jammu and Kashmir": {
+    "center": [
+      76.6638,
+      33.8883
+    ],
+    "zoom": 4.4
+  },
+  "Jharkhand": {
+    "center": [
+      85.6485,
+      23.6575
+    ],
+    "zoom": 5.48
+  },
+  "Karnataka": {
+    "center": [
+      76.3159,
+      15.0148
+    ],
+    "zoom": 3.71
+  },
+  "Kerala": {
+    "center": [
+      76.1314,
+      10.5441
+    ],
+    "zoom": 5.68
+  },
+  "Lakshadweep": {
+    "center": [
+      72.9014,
+      9.9861
+    ],
+    "zoom": 7.41
+  },
+  "Madhya Pradesh": {
+    "center": [
+      78.4212,
+      23.9748
+    ],
+    "zoom": 2.91
+  },
+  "Maharashtra": {
+    "center": [
+      76.7714,
+      18.8178
+    ],
+    "zoom": 3.09
+  },
+  "Manipur": {
+    "center": [
+      93.8623,
+      24.7702
+    ],
+    "zoom": 10.0
+  },
+  "Meghalaya": {
+    "center": [
+      91.313,
+      25.5753
+    ],
+    "zoom": 8.55
+  },
+  "Mizoram": {
+    "center": [
+      92.8521,
+      23.2335
+    ],
+    "zoom": 9.9
+  },
+  "Nagaland": {
+    "center": [
+      94.2883,
+      26.1225
+    ],
+    "zoom": 10.0
+  },
+  "Orissa": {
+    "center": [
+      84.4328,
+      20.1831
+    ],
+    "zoom": 4.18
+  },
+  "Puducherry": {
+    "center": [
+      78.762,
+      13.7814
+    ],
+    "zoom": 3.6
+  },
+  "Punjab": {
+    "center": [
+      75.4011,
+      31.0612
+    ],
+    "zoom": 8.33
+  },
+  "Rajasthan": {
+    "center": [
+      73.873,
+      26.6289
+    ],
+    "zoom": 2.9
+  },
+  "Sikkim": {
+    "center": [
+      88.4697,
+      27.6063
+    ],
+    "zoom": 10.0
+  },
+  "Tamil Nadu": {
+    "center": [
+      78.2863,
+      10.8071
+    ],
+    "zoom": 4.67
+  },
+  "Tripura": {
+    "center": [
+      91.7457,
+      23.7391
+    ],
+    "zoom": 10.0
+  },
+  "Uttar Pradesh": {
+    "center": [
+      80.8578,
+      27.1426
+    ],
+    "zoom": 3.38
+  },
+  "Uttaranchal": {
+    "center": [
+      79.2911,
+      30.0939
+    ],
+    "zoom": 7.37
+  },
+  "West Bengal": {
+    "center": [
+      87.852,
+      24.3802
+    ],
+    "zoom": 4.49
+  }
+}
