@@ -1,7 +1,19 @@
-import React, { useState } from 'react';
+import React, { Suspense, lazy, useState } from 'react';
 import IndiaMap from './components/IndiaMap';
-import VirtualTour from './components/VirtualTour';
-import StoryMode from './components/StoryMode/StoryMode';
+
+const VirtualTour = lazy(() => import('./components/VirtualTour'));
+const StoryMode = lazy(() => import('./components/StoryMode/StoryMode'));
+
+const ScreenLoader = () => (
+  <div className="min-h-screen bg-[#020202] text-white flex items-center justify-center">
+    <div className="text-center">
+      <div className="w-10 h-10 mx-auto rounded-full border-2 border-white/20 border-t-white animate-spin" />
+      <p className="mt-4 text-xs uppercase tracking-[0.35em] text-white/50">
+        Loading
+      </p>
+    </div>
+  </div>
+);
 
 function App() {
   const [currentView, setCurrentView] = useState('map'); // 'map' | 'story' | 'tour'
@@ -22,19 +34,23 @@ function App() {
 
   if (currentView === 'story') {
     return (
-      <StoryMode
-        location={selectedLocation}
-        onBack={handleBackToMap}
-      />
+      <Suspense fallback={<ScreenLoader />}>
+        <StoryMode
+          location={selectedLocation}
+          onBack={handleBackToMap}
+        />
+      </Suspense>
     );
   }
 
   if (currentView === 'tour') {
     return (
-      <VirtualTour
-        location={selectedLocation}
-        onBack={handleBackToMap}
-      />
+      <Suspense fallback={<ScreenLoader />}>
+        <VirtualTour
+          location={selectedLocation}
+          onBack={handleBackToMap}
+        />
+      </Suspense>
     );
   }
 
